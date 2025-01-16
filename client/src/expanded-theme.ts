@@ -1,10 +1,12 @@
+// eslint-disable-next-line
 import { Palette, PaletteColor } from "@mui/material/styles/createPalette";
 
 declare module "@mui/material/styles/createPalette" {
-  interface Palette {
+  interface PaletteColor {
     [key: number]: string;
   }
-  interface Palette{
+
+  interface Palette {
     tertiary: PaletteColor;
   }
 }
